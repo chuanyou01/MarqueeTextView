@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MarqueeText">
+        <attr name="textAlign" format="integer">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+        </attr>
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="autoStart" format="boolean" />
+        <attr name="speed" format="dimension" />
+        <attr name="marqueeTimes" format="integer" />
+        <attr name="text" format="string" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowDx" format="float" />
+        <attr name="shadowDy" format="float" />
+        <attr name="shadowRadius" format="float" />
+
+
+    </declare-styleable>
+</resources>

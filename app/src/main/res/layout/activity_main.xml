@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <com.zeng.chuan.marquee.MarqueeTextView
+        android:id="@+id/mt_content"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:maxWidth="80dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:speed="2px"
+        app:text="Hello World!1231231231231231231231"
+        app:textAlign="center"
+        app:textColor="#3300ff"
+        app:marqueeTimes="3"
+        app:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/speed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="SPEED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/speed_pt"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:text="0px"
+        app:layout_constraintBottom_toBottomOf="@+id/speed_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/speed_title" />
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/speed_title"
+        app:layout_constraintLeft_toRightOf="@+id/speed_title"
+        app:layout_constraintRight_toLeftOf="@+id/speed_pt"
+        app:layout_constraintTop_toTopOf="@+id/speed_title" />
+
+
+</android.support.constraint.ConstraintLayout>
